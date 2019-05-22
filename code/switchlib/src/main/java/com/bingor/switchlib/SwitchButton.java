@@ -162,7 +162,7 @@ public class SwitchButton extends CompoundButton {
         if (!mIsThumbUseDrawable && mThumbColor == null) {
             mThumbColor = ColorUtils.generateThumbColorWithTintColor(mTintColor);
             mCurrThumbColor = mThumbColor.getDefaultColor();
-        } else if (!mIsThumbUseDrawable) {
+        } else if (mIsThumbUseDrawable) {
             // noinspection ConstantConditions
             thumbWidth = Math.max(thumbWidth, mThumbDrawable.getMinimumWidth());
             thumbHeight = Math.max(thumbHeight, mThumbDrawable.getMinimumHeight());
